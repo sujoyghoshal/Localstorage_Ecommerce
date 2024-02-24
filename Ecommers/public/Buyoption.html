@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/Buy.css">
+    <title>Order Page</title>
+</head>
+<body>
+    <header>
+        <h1>Order Page</h1>
+    </header>
+    <form action="" id="form">
+        <span>
+            <img  alt="" id="pimage" src="">
+            <div>
+                <h3 id="productname" style="color: blue;"></h3>
+                <p id="prodes" style="color: rebeccapurple;"></p>
+                <p id="date"></p>
+            </div>
+        </span>
+        <input type="text" id="name" name="name" placeholder="Enter your name" required>
+        <input type="text" id="email" name="email" placeholder="Enter Email" required>
+        <input type="text" id="number" name="number" placeholder="Enter phone number" required>
+        <input type="text" id="al-number" name="al-number" placeholder="Alternative number" required>
+        <input type="date" id="pincode" name="pincode" placeholder="Pin code" required>
+        <textarea name="address" id="address" placeholder="Enter your address" cols="30" rows="5" required></textarea>
+        <select name="payment" required>
+            <option value="visa">Payment</option>
+            <option value="credit">Credit card</option>
+            <option value="upi">UPI</option>
+        </select>
+        <input type="submit" value="Submit">
+    </form>
+
+    <footer>
+        <p>@ copy right-Order Page..</p>
+    </footer>
+    <script src="../db/order.js"></script>
+</body>
+</html>

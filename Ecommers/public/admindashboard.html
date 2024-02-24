@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="../css/admindb.css">
+</head>
+
+<body>
+    <header>
+        <div class="header-left">
+            <h1>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-house" viewBox="0 0 16 16">
+                    <path d="M8.707 1.5a1 1 0 0 0-1.414 0L.646 8.146a.5.5 0 0 0 .708.708L2 8.207V13.5A1.5 1.5 0 0 0 3.5 15h9a1.5 1.5 0 0 0 1.5-1.5V8.207l.646.647a.5.5 0 0 0 .708-.708L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293zM13 7.207V13.5a.5.5 0 0 1-.5.5h-9a.5.5 0 0 1-.5-.5V7.207l5-5z"/>
+                  </svg>
+                Admin Dashboard</h1>
+        </div>
+        <div class="header-right">
+            <a href="../public/index.html" id="logout">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-box-arrow-right" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M10 12.5a.5.5 0 0 1-.5.5h-8a.5.5 0 0 1-.5-.5v-9a.5.5 0 0 1 .5-.5h8a.5.5 0 0 1 .5.5v2a.5.5 0 0 0 1 0v-2A1.5 1.5 0 0 0 9.5 2h-8A1.5 1.5 0 0 0 0 3.5v9A1.5 1.5 0 0 0 1.5 14h8a1.5 1.5 0 0 0 1.5-1.5v-2a.5.5 0 0 0-1 0z"/>
+                    <path fill-rule="evenodd" d="M15.854 8.354a.5.5 0 0 0 0-.708l-3-3a.5.5 0 0 0-.708.708L14.293 7.5H5.5a.5.5 0 0 0 0 1h8.793l-2.147 2.146a.5.5 0 0 0 .708.708z"/>
+                  </svg>
+                Logout</a>
+        </div>
+    </header>
+
+    <div class="container">
+        <br><br>
+        <fieldset id="fildset1">
+            <legend>Add Item</legend>
+            <form action="">
+                <label for="productname">Product Name</label>
+                <input type="text" placeholder="Product name" name="productname" required>
+                <br><br>
+                <label for="productdes">Description</label>
+                <input type="text" placeholder="Product Description" name="productdes" required>
+                <br><br>
+                <label for="productpri">Product Price</label>
+                <input type="number" placeholder="Product price" name="productpri" required>
+                <br><br>
+                <label for="productimg">Product Images</label>
+                <input type="text" placeholder="image link" name="productimg">
+                <br><br>
+                <input type="submit" id="submit">
+            </form>
+        </fieldset>
+        <br><br>
+
+        <div id="edit-container">
+            <fieldset id="fildset2">
+                <legend>Edit Item</legend>
+                <form id="edit-form">
+                    <label for="edit_name">Product Name:</label>
+                    <input type="text" id="edit_name" name="edit_name" required>
+                    <br><br>
+                    <label for="edit_des">Product Description:</label>
+                    <input type="text" id="edit_des" name="edit_des" required>
+                    <br><br>
+                    <label for="edit_price">Product Price:</label>
+                    <input type="number" id="edit_price" name="edit_price" required>
+                    <br><br>
+                    <span>
+                        <button type="submit" id="update">Update</button>
+                        <img alt="" id="mini-image">
+                    </span>
+                </form>
+            </fieldset>
+        </div>
+    </div>
+    <br><br><br>
+    <div class="main">
+        <table id="table" border="1">
+            <tr class="first-row">
+                <th>Product ID</th>
+                <th>Product Name</th>
+                <th>Product Description</th>
+                <th>Product Price</th>
+                <th colspan="2">Action</th>
+                <th>Images</th>
+            </tr>
+        </table>
+        <!-- display -->
+    </div>
+    <button onclick="scrollToTop()" id="scrollToTopBtn" title="Go to top">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-up" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M8 15a.5.5 0 0 0 .5-.5V2.707l3.146 3.147a.5.5 0 0 0 .708-.708l-4-4a.5.5 0 0 0-.708 0l-4 4a.5.5 0 1 0 .708.708L7.5 2.707V14.5a.5.5 0 0 0 .5.5"/>
+          </svg>
+    </button>
+    <footer>© 2024 Admin Dashboard. Created by SUJOY.</footer>
+    <script src="../db/admin.js"></script>
+</body>
+
+</html>
