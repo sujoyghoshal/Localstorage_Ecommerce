@@ -25,3 +25,7 @@
 <p>&nbsp;<img align="center" src="https://github-readme-stats.vercel.app/api?username=sujoyghoshal&show_icons=true&locale=en" alt="sujoyghoshal" /></p>
 
 <p><img align="center" src="https://github-readme-streak-stats.herokuapp.com/?user=sujoyghoshal&" alt="sujoyghoshal" /></p>
+
+
+<br/>
+my name is : sujoyghoshalgit 
