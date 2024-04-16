@@ -83,6 +83,7 @@ let edit_price = document.querySelector('#edit_price');
 const editForm = document.querySelector('#edit-form');
 const pimage = document.querySelector('#mini-image');
 let edit = (index) => {
+    console.log(index);
     div.setAttribute('id', 'show-edit');
     let userData = JSON.parse(localStorage.getItem('product')) || [];
     let itemToEdit = userData[index];
